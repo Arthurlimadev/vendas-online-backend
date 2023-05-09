@@ -14,7 +14,7 @@ import { AddressEntity } from './entities/address.entity';
 export class AddressController {
   constructor(private readonly addressService: AddressService) {}
 
-  @Post(':/userId')
+  @Post('/:userId')
   @UsePipes(ValidationPipe)
   async createAddress(
     @Body() createAddressDto: CreateAddressDto,
