@@ -20,6 +20,7 @@ export class CacheService {
 
     await this.cacheManager.set(key, cities);
 
+
     return cities;
   }
 }
