@@ -29,9 +29,6 @@ export class CityEntity {
   updatedAt: Date;
 
   @OneToMany(() => AddressEntity, (address) => address.city)
-  city?: AddressEntity[];
-
-  @OneToMany(() => AddressEntity, (address) => address.city)
   addresses?: AddressEntity[];
 
   @ManyToOne(() => StateEntity, (state) => state.cities)
